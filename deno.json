@@ -1,0 +1,22 @@
+{
+  "tasks": {
+    "bench": "deno bench ./src/benchmark.ts --allow-read --allow-write --allow-net --allow-env --allow-run --allow-sys",
+    "play:switcher-deno-async": "deno run --watch -A src/states/switcher-deno-async-state.ts",
+    "play:switcher-deno-local": "deno run --watch -A src/states/switcher-deno-local-state.ts",
+    "play:switcher-js-async": "deno run --watch -A src/states/switcher-js-async-state.ts",
+    "play:switcher-js-local": "deno run --watch -A src/states/switcher-js-local-state.ts",
+    "play:harness-async": "deno run --watch -A src/states/harness-async-state.ts",
+    "play:optimizely-async": "deno run --watch -A src/states/optimizely-async-state.ts",
+    "play:unleash-local": "deno run --watch -A src/states/unleash-local-state.ts",
+    "play:split-local": "deno run --watch -A src/states/split-local-state.ts",
+    "fmt": "deno fmt src/ --options-single-quote --options-line-width=120 --check",
+    "fmt:fix": "deno fmt src/ --options-single-quote --options-line-width=120"
+  },
+  "lock": false,
+  "imports": {
+    "@harnessio/ff-nodejs-server-sdk": "npm:@harnessio/ff-nodejs-server-sdk@^1.8.6",
+    "@optimizely/optimizely-sdk": "npm:@optimizely/optimizely-sdk@^6.0.0",
+    "switcher-client": "npm:switcher-client@^4.4.0",
+    "unleash-client": "npm:unleash-client@^6.6.0"
+  }
+}
