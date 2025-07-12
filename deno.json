@@ -16,7 +16,7 @@
   "imports": {
     "@harnessio/ff-nodejs-server-sdk": "npm:@harnessio/ff-nodejs-server-sdk@^1.8.6",
     "@optimizely/optimizely-sdk": "npm:@optimizely/optimizely-sdk@^6.0.0",
-    "switcher-client": "npm:switcher-client@^4.4.0",
+    "switcher-client": "npm:switcher-client@^4.4.1",
     "unleash-client": "npm:unleash-client@^6.6.0"
   }
 }

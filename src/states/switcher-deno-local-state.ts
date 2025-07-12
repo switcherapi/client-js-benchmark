@@ -1,5 +1,5 @@
 import State from './state.ts';
-import { Client, Switcher } from 'jsr:@switcherapi/switcher-client-deno@2.3.0';
+import { Client, Switcher } from 'jsr:@switcherapi/switcher-client-deno@2.3.1';
 
 export default class SwitcherDenoLocalState implements State {
   private switcher?: Switcher;
@@ -14,7 +14,7 @@ export default class SwitcherDenoLocalState implements State {
       environment: 'default',
     }, {
       local: true,
-      static: true,
+      freeze: true,
     });
 
     // Load in-memory snapshot

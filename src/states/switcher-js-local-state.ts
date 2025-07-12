@@ -1,5 +1,5 @@
 import State from './state.ts';
-import { Client, Switcher } from 'npm:switcher-client@4.4.0';
+import { Client, Switcher } from 'npm:switcher-client@4.4.1';
 
 export default class SwitcherJsLocalState implements State {
   private switcher?: Switcher;
@@ -14,7 +14,7 @@ export default class SwitcherJsLocalState implements State {
       environment: 'default',
     }, {
       local: true,
-      static: true,
+      freeze: true,
     });
 
     // Load in-memory snapshot

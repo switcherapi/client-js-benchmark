@@ -1,5 +1,5 @@
 import State from './state.ts';
-import { Client, Switcher } from 'npm:switcher-client@4.4.0';
+import { Client, Switcher } from 'npm:switcher-client@4.4.1';
 
 export default class SwitcherJsAsyncState implements State {
   private switcher?: Switcher;
