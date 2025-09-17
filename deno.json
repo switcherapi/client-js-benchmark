@@ -9,14 +9,17 @@
     "play:optimizely-async": "deno run --watch -A src/states/optimizely-async-state.ts",
     "play:unleash-local": "deno run --watch -A src/states/unleash-local-state.ts",
     "play:split-local": "deno run --watch -A src/states/split-local-state.ts",
+    "play:amplitude-experiment-async": "deno run --watch -A src/states/amplitude-experiment-async-state.ts",
+    "play:amplitude-experiment-local": "deno run --watch -A src/states/amplitude-experiment-local-state.ts",
     "fmt": "deno fmt src/ --options-single-quote --options-line-width=120 --check",
     "fmt:fix": "deno fmt src/ --options-single-quote --options-line-width=120"
   },
   "lock": false,
   "imports": {
-    "@harnessio/ff-nodejs-server-sdk": "npm:@harnessio/ff-nodejs-server-sdk@^1.8.6",
-    "@optimizely/optimizely-sdk": "npm:@optimizely/optimizely-sdk@^6.0.0",
+    "@harnessio/ff-nodejs-server-sdk": "npm:@harnessio/ff-nodejs-server-sdk@^1.8.9",
+    "@optimizely/optimizely-sdk": "npm:@optimizely/optimizely-sdk@^6.1.0",
     "switcher-client": "npm:switcher-client@^4.4.1",
-    "unleash-client": "npm:unleash-client@^6.6.0"
+    "unleash-client": "npm:unleash-client@^6.7.0",
+    "@amplitude/experiment-node-server": "npm:@amplitude/experiment-node-server@^1.10.1"
   }
 }

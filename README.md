@@ -37,4 +37,6 @@ Results are based on the average time per iteration and the number of iterations
 | Client: switcher-client-deno (async)  |        126.3 ns |     7,920,000 | (112.7 ns … 182.1 ns) | 131.2 ns | 165.2 ns | 171.1 ns |
 | Client: switcher-client-js (async)    |        130.8 ns |     7,643,000 | (116.6 ns … 358.2 ns) | 135.7 ns | 177.2 ns | 186.9 ns |
 | Client: harness (async)               |        319.9 ns |     3,126,000 | (288.1 ns … 389.6 ns) | 330.7 ns | 368.0 ns | 389.6 ns |
+| Client: amplitude-experiment (local)  |          1.4 µs |       720,800 | (  1.3 µs …   1.8 µs) |   1.4 µs |   1.8 µs |   1.8 µs 
 | Client: optimizely (local)            |          1.4 µs |       690,900 | (  1.4 µs …   2.1 µs) |   1.5 µs |   2.1 µs |   2.1 µs |
+| Client: amplitude-experiment (async)  |         43.0 ms |          23.2 | ( 38.9 ms …  60.0 ms) |  49.9 ms |  60.0 ms |  60.0 ms |

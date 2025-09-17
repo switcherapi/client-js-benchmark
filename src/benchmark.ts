@@ -31,6 +31,28 @@ Deno.bench('Client: optimizely (local)', () => {
   }
 });
 
+// Amplitude Experiment [@amplitude/experiment-node-server] https://github.com/amplitude/experiment-node-server
+const { default: AmplitudeExperimentAsyncState } = await import('./states/amplitude-experiment-async-state.ts');
+const amplitudeExperimentAsyncState = new AmplitudeExperimentAsyncState();
+await amplitudeExperimentAsyncState.setupSdk();
+
+Deno.bench('Client: amplitude-experiment (async)', async () => {
+  if (!await amplitudeExperimentAsyncState.run()) {
+    throw new Error('Failed');
+  }
+});
+
+// Amplitude Experiment [@amplitude/experiment-node-server] https://github.com/amplitude/experiment-node-server
+const { default: AmplitudeExperimentLocalState } = await import('./states/amplitude-experiment-local-state.ts');
+const amplitudeExperimentLocalState = new AmplitudeExperimentLocalState();
+await amplitudeExperimentLocalState.setupSdk();
+
+Deno.bench('Client: amplitude-experiment (local)', async () => {
+  if (!amplitudeExperimentLocalState.run()) {
+    throw new Error('Failed');
+  }
+});
+
 // Switcher API [switcher-client-deno ASYNC] https://github.com/optimizely/javascript-sdk
 const { default: SwitcherDenoAsyncState } = await import('./states/switcher-deno-async-state.ts');
 const switcherDenoAsyncState = new SwitcherDenoAsyncState();
