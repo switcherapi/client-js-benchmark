@@ -1,5 +1,5 @@
 import State from './state.ts';
-import { Client, Switcher } from 'jsr:@switcherapi/switcher-client-deno@2.3.1';
+import { Client, Switcher } from 'jsr:@switcherapi/switcher-client-deno';
 
 export default class SwitcherDenoLocalState implements State {
   private switcher?: Switcher;
