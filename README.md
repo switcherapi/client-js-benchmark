@@ -1,7 +1,7 @@
 # About
 
 This benchmark compares major Feature Flag SDKs against Switcher Client SDK for JS & Deno.<br> 
-Tests included in this benchmark are focused only on avarage performance and do not reflect nor measure any other specific SDK capabilities.<br> 
+Tests included in this benchmark are focused only on average performance and do not reflect nor measure any other specific SDK capabilities.<br> 
 The goal is to gain more knowledge and define a baseline to improve Switcher Client SDK overall performance in the future releases.
 
 ## Run
