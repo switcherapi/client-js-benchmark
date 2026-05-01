@@ -75,7 +75,7 @@
       font-weight="bold"
     >10.6ns</text>
 
-    <!-- Switcher JS Local: 10.7 ns -->
+    <!-- Switcher JS Local: 10.5 ns -->
     <rect x="140" y="397" width="100" height="3" fill="#2196F3" opacity="0.8" />
     <text
       x="190"
@@ -85,21 +85,21 @@
       font-size="10"
       fill="#333"
       font-weight="bold"
-    >10.7ns</text>
+    >10.5ns</text>
 
-    <!-- Unleash Local: 61.5 ns -->
-    <rect x="260" y="384" width="100" height="16" fill="#9C27B0" opacity="0.8" />
+    <!-- Unleash Local: 72.7 ns -->
+    <rect x="260" y="381" width="100" height="19" fill="#9C27B0" opacity="0.8" />
     <text
       x="310"
-      y="395"
+      y="391"
       text-anchor="middle"
       font-family="Arial, sans-serif"
       font-size="10"
       fill="white"
       font-weight="bold"
-    >61.5ns</text>
+    >72.7ns</text>
 
-    <!-- Switcher Deno Async: 126.3 ns -->
+    <!-- Switcher Deno Async: 125.6 ns -->
     <rect x="380" y="366" width="100" height="34" fill="#FF9800" opacity="0.8" />
     <text
       x="430"
@@ -109,9 +109,9 @@
       font-size="10"
       fill="white"
       font-weight="bold"
-    >126.3ns</text>
+    >125.6ns</text>
 
-    <!-- Switcher JS Async: 130.8 ns -->
+    <!-- Switcher JS Async: 131.5 ns -->
     <rect x="500" y="365" width="100" height="35" fill="#FF9800" opacity="0.8" />
     <text
       x="550"
@@ -121,19 +121,19 @@
       font-size="10"
       fill="white"
       font-weight="bold"
-    >130.8ns</text>
+    >131.5ns</text>
 
-    <!-- Harness Async: 319.9 ns -->
-    <rect x="620" y="315" width="100" height="85" fill="#F44336" opacity="0.8" />
+    <!-- Harness Async: 542.8 ns -->
+    <rect x="620" y="255" width="100" height="145" fill="#F44336" opacity="0.8" />
     <text
       x="670"
-      y="360"
+      y="328"
       text-anchor="middle"
       font-family="Arial, sans-serif"
       font-size="10"
       fill="white"
       font-weight="bold"
-    >319.9ns</text>
+    >542.8ns</text>
 
     <!-- Optimizely Local: 1400 ns (1.4 µs) -->
     <rect x="740" y="27" width="100" height="373" fill="#E91E63" opacity="0.8" />
