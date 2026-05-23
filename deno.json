@@ -17,10 +17,10 @@
   "lock": false,
   "imports": {
     "@harnessio/ff-nodejs-server-sdk": "npm:@harnessio/ff-nodejs-server-sdk@^1.8.12",
-    "@optimizely/optimizely-sdk": "npm:@optimizely/optimizely-sdk@^6.3.1",
+    "@optimizely/optimizely-sdk": "npm:@optimizely/optimizely-sdk@^6.4.0",
     "switcher-client": "npm:switcher-client@^4.5.0",
-    "switcher-client-deno": "jsr:@switcherapi/switcher-client-deno@^2.4.0",
-    "unleash-client": "npm:unleash-client@^6.10.1",
-    "@amplitude/experiment-node-server": "npm:@amplitude/experiment-node-server@^1.13.5"
+    "switcher-client-deno": "jsr:@switcherapi/switcher-client-deno@^2.5.0",
+    "unleash-client": "npm:unleash-client@^6.11.0",
+    "@amplitude/experiment-node-server": "npm:@amplitude/experiment-node-server@^1.13.6"
   }
 }

@@ -58,9 +58,9 @@ const { default: SwitcherDenoAsyncState } = await import('./states/switcher-deno
 const switcherDenoAsyncState = new SwitcherDenoAsyncState();
 await switcherDenoAsyncState.setupSdk();
 
-Deno.bench('Client: switcher-client-deno (async)', async () => {
-  if (!await switcherDenoAsyncState.run()) {
-    throw new Error('Fail');
+Deno.bench('Client: switcher-client-deno (async)', () => {
+  if (!switcherDenoAsyncState.run()) {
+    throw new Error('Failed');
   }
 });
 
@@ -77,11 +77,11 @@ Deno.bench('Client: switcher-client-deno (local)', () => {
 
 // Switcher API [switcher-client-js ASYNC]
 const { default: SwitcherJsAsyncState } = await import('./states/switcher-js-async-state.ts');
-const switcheJsrAsyncState = new SwitcherJsAsyncState();
-await switcheJsrAsyncState.setupSdk();
+const switcherJsAsyncState = new SwitcherJsAsyncState();
+await switcherJsAsyncState.setupSdk();
 
 Deno.bench('Client: switcher-client-js (async)', async () => {
-  if (!await switcheJsrAsyncState.run()) {
+  if (!await switcherJsAsyncState.run()) {
     throw new Error('Failed');
   }
 });

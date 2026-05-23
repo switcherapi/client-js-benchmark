@@ -15,14 +15,14 @@ export default class SwitcherDenoAsyncState implements State {
     });
 
     // Initialize the switcher instance
-    this.switcher = Client.getSwitcher().throttle(2000);
+    this.switcher = Client.getSwitcher('CLIENT_DENO_FEATURE').throttle(2000);
 
     // warm up the SDK
-    await this.switcher!.isItOn('CLIENT_DENO_FEATURE');
+    await this.switcher!.isItOn();
   }
 
-  run(): Promise<boolean> {
-    return this.switcher!.isItOnBool('CLIENT_DENO_FEATURE', true);
+  run(): boolean {
+    return this.switcher!.isItOnBool();
   }
 }
 
@@ -30,9 +30,9 @@ if (import.meta.main) {
   const state = new SwitcherDenoAsyncState();
   await state.setupSdk();
 
-  setInterval(async () => {
+  setInterval(() => {
     const time = Date.now();
-    const result = await state.run();
+    const result = state.run();
     console.log(`- ${Date.now() - time} ms - ${JSON.stringify(result)}`);
   }, 1000);
 }

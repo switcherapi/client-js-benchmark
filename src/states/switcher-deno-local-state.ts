@@ -21,11 +21,11 @@ export default class SwitcherDenoLocalState implements State {
     await Client.loadSnapshot({ fetchRemote: true });
 
     // Initialize the switcher instance
-    this.switcher = Client.getSwitcher().throttle(1000);
+    this.switcher = Client.getSwitcher('CLIENT_DENO_FEATURE').throttle(1000);
   }
 
   run(): boolean {
-    return this.switcher!.isItOnBool('CLIENT_DENO_FEATURE');
+    return this.switcher!.isItOnBool();
   }
 }
 
